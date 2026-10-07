@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="immogest.controleur.Controleur" fx:id="racine" style="-fx-font-size: 14px; -fx-background-color: #f7f8fa;">
+<padding><Insets top="20" right="24" bottom="20" left="24"/></padding>
+<top><VBox spacing="14"><Label text="ImmoGest" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #203d52;"/><HBox spacing="10"><Button text="Accueil" onAction="#accueil"/><Button text="Données" onAction="#donnees"/><Button text="Biens disponibles" onAction="#biens"/><Button text="Signer un bail" onAction="#signature"/><Button text="Quittances" onAction="#quittances"/></HBox><Separator/></VBox></top>
+<center><VBox spacing="24" alignment="CENTER_LEFT"><Label text="Gestion locative" style="-fx-font-size: 30px;"/><Label text="Enregistrer les personnes et les biens, signer les baux et émettre les quittances." wrapText="true"/><Label text="1. Ajoute un bien, un locataire et un gestionnaire dans Données.&#10;2. Consulte les biens disponibles pour la période souhaitée.&#10;3. Signe un bail avec son état des lieux d’entrée.&#10;4. Émets une quittance ou clôture le bail." wrapText="true"/><Button text="Commencer : ajouter des données" onAction="#donnees"/><Label text="Les données sont conservées dans MySQL."/></VBox></center><bottom><Label fx:id="message" wrapText="true" style="-fx-text-fill: #9d2424; -fx-padding: 15 0 0 0;"/></bottom></BorderPane>

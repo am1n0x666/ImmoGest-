@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="immogest.controleur.Controleur" fx:id="racine" style="-fx-font-size: 14px; -fx-background-color: #f7f8fa;">
+<padding><Insets top="20" right="24" bottom="20" left="24"/></padding>
+<top><VBox spacing="14"><Label text="ImmoGest" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #203d52;"/><HBox spacing="10"><Button text="Accueil" onAction="#accueil"/><Button text="Données" onAction="#donnees"/><Button text="Biens disponibles" onAction="#biens"/><Button text="Signer un bail" onAction="#signature"/><Button text="Quittances" onAction="#quittances"/></HBox><Separator/></VBox></top>
+<center><VBox spacing="18"><padding><Insets top="20"/></padding><Label text="Émission de quittance" style="-fx-font-size: 24px;"/><ComboBox fx:id="bail" promptText="Choisir un bail actif" prefWidth="920"/><HBox spacing="12"><Label text="Date d’émission"/><TextField fx:id="emission"/><Button text="Émettre" onAction="#emettre"/><Button text="Clôturer le bail" onAction="#cloturer"/></HBox><TextArea fx:id="quittance" editable="false" prefHeight="360" wrapText="true"/></VBox></center><bottom><Label fx:id="message" wrapText="true" style="-fx-text-fill: #9d2424; -fx-padding: 15 0 0 0;"/></bottom></BorderPane>
